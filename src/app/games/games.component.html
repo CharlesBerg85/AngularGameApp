@@ -2,7 +2,7 @@
     <h3>Games:</h3>
     <ul>
         <li *ngFor="let game of games">
-            {{ game }}
+            <p>{{ game.id }}. {{ game.name }}: {{ game.genre }} </p>
         </li>
     </ul>
 </div>
