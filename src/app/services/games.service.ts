@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Game } from '../models/game';
 import { Genre } from '../types/genre';
+import { Observable, of } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -22,5 +23,9 @@ export class GamesService {
       genre: Genre.Fighting 
     }
   ]
-  constructor() { }
+  constructor() {}
+
+  getGames = (): Observable<Game[]> => {
+    return of(this.games);
+  }
 }
