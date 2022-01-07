@@ -1,6 +1,6 @@
+import { GamesService } from './../services/games.service';
 import { Component, OnInit } from '@angular/core';
 import { Game } from '../models/game';
-import { Genre } from '../types/genre';
 
 @Component({
   selector: 'app-games',
@@ -8,25 +8,9 @@ import { Genre } from '../types/genre';
   styleUrls: ['./games.component.css']
 })
 export class GamesComponent implements OnInit {
-  games: Game[] = [
-    {
-      id: 1,
-      name: 'Resident Evil',
-      genre: Genre.Horror 
-    },
-    {
-      id: 2,
-      name: 'UnCharted',
-      genre: Genre.Adventure 
-    },
-    {
-      id: 3,
-      name: 'Street Fighter',
-      genre: Genre.Fighting 
-    }
-  ]
-  constructor() { 
-
+   games: Game[] | undefined;
+  constructor(private gamesService: GamesService) { 
+      this.games = gamesService.games;
   }
 
   ngOnInit(): void {
