@@ -7,9 +7,12 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 import { environment } from 'src/environments/environment';
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { GamesComponent } from './games/games.component';
+
+import { GamesService } from './services/games.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,7 @@ import { GamesComponent } from './games/games.component';
     AngularFirestoreModule
 
   ],
-  providers: [],
+  providers: [GamesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
