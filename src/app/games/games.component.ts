@@ -9,11 +9,14 @@ import { Game } from '../models/game';
 })
 export class GamesComponent implements OnInit {
    games: Game[] | undefined;
-  constructor(private gamesService: GamesService) { 
-      this.games = gamesService.games;
+   dataService: GamesService | undefined;
+   
+  constructor(private gamesService: GamesService) {
+    this.dataService = gamesService;
   }
 
   ngOnInit(): void {
+    this.dataService?.getGames().subscribe(games => this.games = games);
   }
 
 }
