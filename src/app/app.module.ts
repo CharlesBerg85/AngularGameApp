@@ -13,16 +13,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { GamesComponent } from './games/games.component';
-import { GametitlesComponent } from './gametitles/gametitles.component';
 
 import { GamesService } from './services/games.service';
+import { GameTitleComponent } from './game-title/game-title.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     GamesComponent,
-    GametitlesComponent
+    GameTitleComponent
   ],
   imports: [
     BrowserModule,
