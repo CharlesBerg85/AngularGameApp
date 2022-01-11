@@ -16,13 +16,15 @@ import { GamesComponent } from './games/games.component';
 
 import { GamesService } from './services/games.service';
 import { GameTitleComponent } from './game-title/game-title.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     GamesComponent,
-    GameTitleComponent
+    GameTitleComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
