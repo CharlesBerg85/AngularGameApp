@@ -1,19 +1,21 @@
-<form>
+<form (ngSubmit)='onSubmit()'>
   <div>
     <label for="firstname">First Name: </label>
-    <input type="text" placeholder="FirstName" id="firstname" name="firstname"/>
+    <input type="text" placeholder="FirstName" id="firstname" name="firstname" required [(ngModel)]="model.firstname"/>
   </div>
   <div>
     <label for="lastname">Last Name: </label>
-    <input type="text" placeholder="LastName" id="lastname" name="lastname"/>
+    <input type="text" placeholder="LastName" id="lastname" name="lastname" required [(ngModel)]="model.lastname"/>
   </div>
   <div>
     <label for="email">Email: </label>
-    <input type="text" placeholder="Email" id="email" name="email"/>
+    <input type="text" placeholder="Email" id="email" name="email" required [(ngModel)]="model.email"/>
   </div>
   <div>
     <label for="password">Password: </label>
-    <input type="text" placeholder="Password" id="password" name="password"/>
+    <input type="text" placeholder="Password" id="password" name="password" required [(ngModel)]="model.password"/>
   </div>
-
+  <div>
+      <button type="submit">Submit</button>
+  </div>
 </form>
