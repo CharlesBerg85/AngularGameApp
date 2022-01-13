@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Game } from '../models/game';
-import { Genre } from '../types/genre';
+import { Game } from '../../../shared/models/game';
+import { Genre } from '../../../shared/types/genre';
 import { Observable, of } from 'rxjs';
 @Injectable({
   providedIn: 'root'
