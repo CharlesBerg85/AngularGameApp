@@ -1,3 +1,4 @@
+import { GamesModule } from './modules/games/games.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -10,18 +11,11 @@ import { environment } from 'src/environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './modules/home/home.component';
-import { GamesComponent } from './modules/games/components/games/games.component';
-
-import { GamesService } from './modules/games/services/games.service';
 import { GameTitleComponent } from './shared/game-title/game-title.component';
 import { SignUpComponent } from './shared/sign-up/sign-up.component';
-
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    GamesComponent,
     GameTitleComponent,
     SignUpComponent
   ],
@@ -31,10 +25,11 @@ import { SignUpComponent } from './shared/sign-up/sign-up.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFirestoreModule,
-    FormsModule
+    FormsModule,
+    GamesModule
 
   ],
-  providers: [GamesService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

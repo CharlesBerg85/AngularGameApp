@@ -8,8 +8,8 @@ import { Game } from 'src/app/shared/models/game';
   styleUrls: ['./games.component.css']
 })
 export class GamesComponent implements OnInit {
-   games: Game[] | undefined;
-   dataService: GamesService | undefined;
+   games: Game[];
+   dataService: GamesService;
    
   constructor(private gamesService: GamesService) {
     this.dataService = gamesService;
