@@ -9,23 +9,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 const routes: Routes = [
-  {
-    path:'sign-up',
-    component: SignUpComponent
-  },
-  {
-    path:'games',
-    component: GamesComponent
-  },
-  {
-    path:'game-title',
-    component: GameTitleComponent
-  },
-  {
-    path:'',
-    redirectTo: '/sign-up',
-    pathMatch: 'full'
-  }
+  { path:'',redirectTo: '/sign-up',pathMatch: 'full'},
+  { path:'sign-up',component: SignUpComponent},
+  { path:'games',component: GamesComponent},
+  { path:'game-title',component: GameTitleComponent}
+  
 ]
 @NgModule({
   declarations: [],
