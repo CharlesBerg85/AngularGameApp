@@ -13,7 +13,7 @@ import { environment } from 'src/environments/environment';
 
 import { AppComponent } from './app.component';
 import { GameTitleComponent } from './shared/game-title/game-title.component';
-import { SignUpComponent } from './shared/sign-up/sign-up.component';
+import { SignUpComponent } from './modules/sign-up/sign-up.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
