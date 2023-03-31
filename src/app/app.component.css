@@ -1,29 +1,43 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+}
+
 .btn {
-    position: relative;
-    display: inline-block;
-    margin: 40px auto;
-    padding: 0.5%;
-
-    overflow: hidden;
-
-    border-width: 0;
-    outline: none;
-    border-radius: 2px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-
-    background-color: #da823a;
-    color: #d7e2ec;
-    font-size: 1.4em;
-    text-decoration: none;
-
-    transition: background-color 0.3s;
-    margin-left: 420px;
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #ffdb58;
+  color: #000;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  margin: 10px;
+  transition: background-color 0.3s;
 }
+
 .btn:hover {
-	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
-	background-color:#68a54b;
+  background-color: #fff;
+  color: #ffdb58;
 }
+
 .btn:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }

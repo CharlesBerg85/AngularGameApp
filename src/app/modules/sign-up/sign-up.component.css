@@ -1,24 +1,65 @@
-form input {
-    outline-width: 0;
-    border-style: none;
-}
-form div {
-    margin-bottom: 5px;
-    text-align: center;
-}
-h3 {
-    text-align: center;
-}
-input.ng-invalid.ng-touched {
-    border-top-style: none;
-    border-left-style: none;
-    border-right-style: none;
-    border-bottom: 2px solid red;
+/* Set the background color to a light gray */
+body {
+  background-color: #c2c2c2;
 }
 
-input.ng-valid.ng-touched {
-    border-bottom: 2px solid green;
+/* Set the form's background color to a dark gray */
+form {
+  background-color: #292929;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  margin: 0 auto;
 }
-button{
-    margin-top: 10px;
+
+/* Set the input fields' background color to a darker gray */
+input {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+/* Set the label text color to a light gray */
+label {
+  color: #c2c2c2;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+  background-color: #c2c2c2;
+  border: none;
+  color: #292929;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Change the submit button color on hover */
+button[type="submit"]:hover {
+  background-color: #fff;
+  color: #292929;
+}
+
+/* Add a border to invalid input fields */
+input.ng-invalid.ng-touched {
+  border-bottom: 2px solid #d9534f;
+}
+
+/* Add a border to valid input fields */
+input.ng-valid.ng-touched {
+  border-bottom: 2px solid #5cb85c;
+}
+
+/* Add an error message */
+.error-message {
+  color: #d9534f;
+  font-size: 12px;
+  margin-top: 5px;
 }
