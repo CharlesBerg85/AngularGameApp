@@ -1,43 +1,86 @@
-body {
-  background-color: #000;
-  color: #fff;
-  font-family: 'Press Start 2P', cursive;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-h1 {
-  font-size: 3em;
-  margin: 0;
-  text-align: center;
-  padding: 20px;
-}
-
+/* Style the buttons */
 .btn {
   display: inline-block;
+  margin: 20px;
   padding: 10px 20px;
   border: none;
-  border-radius: 3px;
-  background-color: #ffdb58;
-  color: #000;
+  border-radius: 5px;
   font-size: 1.2em;
   font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-decoration: none;
-  margin: 10px;
+  color: #f0f0f0;
+  background-color: #da4f4f;
+  cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .btn:hover {
-  background-color: #fff;
-  color: #ffdb58;
+  background-color: #bf4242;
 }
 
-.btn:active {
+/* Style the form */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form div {
+  margin: 10px 0;
+}
+
+form label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s;
+}
+
+form input:focus {
+  outline: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the game cards */
+.card {
   position: relative;
-  top: 1px;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #f0f0f0;
 }

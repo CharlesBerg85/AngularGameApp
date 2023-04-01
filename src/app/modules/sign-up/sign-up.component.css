@@ -1,65 +1,45 @@
-/* Set the background color to a light gray */
-body {
-  background-color: #c2c2c2;
-}
-
-/* Set the form's background color to a dark gray */
+/* Sign-up page */
 form {
-  background-color: #292929;
+  margin: 50px auto;
+  max-width: 500px;
   padding: 20px;
-  border-radius: 5px;
-  width: 400px;
-  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Set the input fields' background color to a darker gray */
-input {
-  background-color: #1c1c1c;
-  color: #fff;
-  padding: 5px;
-  border-radius: 3px;
-  border: none;
-  margin-bottom: 10px;
+form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--color-blue);
 }
 
-/* Set the label text color to a light gray */
-label {
-  color: #c2c2c2;
+form input {
   display: block;
-  margin-bottom: 5px;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid var(--color-gray);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
 }
 
-/* Style the submit button */
-button[type="submit"] {
-  background-color: #c2c2c2;
+form input:focus {
+  outline: none;
+  border-color: var(--color-blue);
+}
+
+form button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--color-blue);
   border: none;
-  color: #292929;
-  padding: 10px 20px;
-  border-radius: 3px;
+  border-radius: 5px;
+  color: #fff;
   font-size: 16px;
   cursor: pointer;
-  margin-top: 20px;
 }
 
-/* Change the submit button color on hover */
-button[type="submit"]:hover {
-  background-color: #fff;
-  color: #292929;
-}
-
-/* Add a border to invalid input fields */
-input.ng-invalid.ng-touched {
-  border-bottom: 2px solid #d9534f;
-}
-
-/* Add a border to valid input fields */
-input.ng-valid.ng-touched {
-  border-bottom: 2px solid #5cb85c;
-}
-
-/* Add an error message */
-.error-message {
-  color: #d9534f;
-  font-size: 12px;
-  margin-top: 5px;
+form button[type="submit"]:hover {
+  background-color: #005ea8;
 }

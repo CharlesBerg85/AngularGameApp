@@ -15,11 +15,14 @@ import { AppComponent } from './app.component';
 import { GameTitleComponent } from './shared/game-title/game-title.component';
 import { SignUpComponent } from './modules/sign-up/sign-up.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavbarComponent} from "./modules/navbar/navbar.component";
+
 @NgModule({
   declarations: [
     AppComponent,
     GameTitleComponent,
-    SignUpComponent
+    SignUpComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
