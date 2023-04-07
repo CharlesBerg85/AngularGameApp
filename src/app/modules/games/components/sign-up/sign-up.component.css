@@ -1,6 +1,13 @@
 /* PS5-inspired theme */
+@font-face {
+  font-family: 'PlayStation';
+  src: url('https://fonts.cdnfonts.com/s/13173/PlayStation-LT-Regular.woff2') format('woff2'),
+  url('https://fonts.cdnfonts.com/s/13173/PlayStation-LT-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
-/* Colors */
+/* Sign-up page */
 form {
   margin: 50px auto;
   max-width: 500px;
@@ -13,7 +20,7 @@ form h3 {
   text-align: center;
   margin-bottom: 20px;
   color: blue;
-  font-family: 'Playstation';
+  font-family: 'PlayStation', Arial, sans-serif;
 }
 
 form input {
@@ -47,3 +54,12 @@ form button[type="submit"]:hover {
   background-color: #005ea8;
 }
 
+/* Game-Shelf title */
+h3 {
+  font-family: 'PlayStation', Arial, sans-serif;
+  font-size: 4rem;
+  color: blue;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
