@@ -13,9 +13,9 @@ import { environment } from 'src/environments/environment';
 
 import { AppComponent } from './app.component';
 import {GameTitleComponent} from "./modules/games/components/game-title/game-title.component";
-import { SignUpComponent } from './modules/sign-up/sign-up.component';
+import {SignUpComponent} from "./modules/games/components/sign-up/sign-up.component";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavbarComponent} from "./modules/navbar/navbar.component";
+import {NavbarComponent} from "./modules/games/components/navbar/navbar.component";
 
 @NgModule({
   declarations: [

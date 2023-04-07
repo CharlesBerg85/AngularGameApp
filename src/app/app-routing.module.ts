@@ -1,6 +1,6 @@
 import { GameTitleComponent } from "./modules/games/components/game-title/game-title.component";
 import { GamesComponent } from './modules/games/components/games/games.component';
-import { SignUpComponent } from './modules/sign-up/sign-up.component';
+import {SignUpComponent} from "./modules/games/components/sign-up/sign-up.component";
 
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
