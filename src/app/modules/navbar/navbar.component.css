@@ -1,17 +1,11 @@
 /* PS5-inspired theme */
 
-/* Colors */
-:root {
-  --color-blue: #0072c6;
-  --color-gray: #6e6e6e;
-}
-
 /* Navigation bar */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-gray);
+  background-color: gray;
   padding: 10px;
 }
 
@@ -23,6 +17,6 @@ nav a {
 
 nav a.active,
 nav a:hover {
-  background-color: var(--color-blue);
+  background-color: blue;
   color: #fff;
 }

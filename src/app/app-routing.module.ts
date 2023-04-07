@@ -1,4 +1,4 @@
-import { GameTitleComponent } from './shared/game-title/game-title.component';
+import { GameTitleComponent } from "./modules/games/components/game-title/game-title.component";
 import { GamesComponent } from './modules/games/components/games/games.component';
 import { SignUpComponent } from './modules/sign-up/sign-up.component';
 
