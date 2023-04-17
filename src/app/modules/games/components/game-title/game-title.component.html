@@ -1,4 +1,53 @@
-<h4>Game: {{game}}</h4>
-<div>
-  <input [(ngModel)]="game" placeholder="Title" />
+<div class="container">
+  <h3>Game List</h3>
+  <div class="search-container">
+    <input type="text" placeholder="Search by title...">
+    <select>
+      <option value="">All Genres</option>
+      <option value="action">Action</option>
+      <option value="adventure">Adventure</option>
+      <option value="rpg">RPG</option>
+      <option value="shooter">Shooter</option>
+    </select>
+    <select>
+      <option value="">All Consoles</option>
+      <option value="ps5">PS5</option>
+      <option value="xbox">Xbox Series X</option>
+      <option value="pc">PC</option>
+    </select>
+    <button type="submit">Search</button>
+  </div>
+  <ul class="game-list">
+    <li>
+      <div class="game-item">
+        <img src="game1.jpg" alt="Game 1">
+        <div class="game-info">
+          <h4>Game 1</h4>
+          <p>Genre: Action</p>
+          <p>Console: PS5</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="game-item">
+        <img src="game2.jpg" alt="Game 2">
+        <div class="game-info">
+          <h4>Game 2</h4>
+          <p>Genre: RPG</p>
+          <p>Console: Xbox Series X</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="game-item">
+        <img src="game3.jpg" alt="Game 3">
+        <div class="game-info">
+          <h4>Game 3</h4>
+          <p>Genre: Shooter</p>
+          <p>Console: PC</p>
+        </div>
+      </div>
+    </li>
+    <!-- more game items -->
+  </ul>
 </div>

@@ -12,7 +12,7 @@ form h3 {
   text-align: center;
   margin-bottom: 20px;
   color: blue;
-  font-family: 'PS Bold', sans-serif;
+  font-family: 'PS-Bold', sans-serif;
 }
 
 form input {
@@ -47,11 +47,18 @@ form button[type="submit"]:hover {
 }
 
 /* Game-Shelf title */
-h3 {
-  font-family: 'PS Bold', sans-serif;
+h1 {
+  font-family: 'PS-Bold', sans-serif;
   font-size: 4rem;
   color: blue;
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+@font-face {
+  font-family: 'PS-Bold';
+  src: url('src/fonts/PS-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
