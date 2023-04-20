@@ -1,4 +1,15 @@
 /* PS5-inspired theme */
+
+/* Game-Shelf title */
+h1 {
+  font-family: 'PS-Bold', sans-serif;
+  font-size: 4rem;
+  color: blue;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 /* Sign-up page */
 form {
   margin: 50px auto;
@@ -46,19 +57,4 @@ form button[type="submit"]:hover {
   background-color: #005ea8;
 }
 
-/* Game-Shelf title */
-h1 {
-  font-family: 'PS-Bold', sans-serif;
-  font-size: 4rem;
-  color: blue;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
 
-@font-face {
-  font-family: 'PS-Bold';
-  src: url('src/fonts/PS-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
