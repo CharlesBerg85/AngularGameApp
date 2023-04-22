@@ -1,0 +1,54 @@
+/* PS5-inspired theme */
+@font-face {
+  font-family: 'PS-Bold';
+  src: url('src/fonts/PS-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Sign-in page */
+form {
+  margin: 50px auto;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: blue;
+  font-family: 'PS-Bold', sans-serif;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+form input:focus {
+  outline: none;
+  border-color: blue;
+}
+
+form button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: #005ea8;
+}

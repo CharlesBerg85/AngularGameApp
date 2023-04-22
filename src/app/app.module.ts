@@ -16,13 +16,15 @@ import {GameTitleComponent} from "./modules/games/components/game-title/game-tit
 import {SignUpComponent} from "./modules/games/components/sign-up/sign-up.component";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {NavbarComponent} from "./modules/games/components/navbar/navbar.component";
+import { SigninComponent} from "./modules/games/components/signin/signin.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     GameTitleComponent,
     SignUpComponent,
-    NavbarComponent
+    NavbarComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
